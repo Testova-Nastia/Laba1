@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Моя страничка</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .section {
+                padding: 60px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 40px;
+            }
+            .two-columns {
+                display: flex;
+                align-items: center;
+                gap: 60px;
+                padding: 80px 40px;
+                max-width: 1200px;
+                margin: 0 auto;
+                border-radius: 20px;
+            }
+            .section-title {
+                text-align: center;
+                margin: 0 auto;
+            }
+            .text-content {
+                flex: 1;
+                padding: 30px;
+            }
+            .center-text {
+                flex: 1;
+                padding: 40px;
+                text-align: center;
+                font-size: 20px;
+            }
+            .center-box {
+                display: flex;
+                align-items: center;
+                gap: 60px;
+                padding: 80px 40px;
+                max-width: 1200px;
+                height: 25%;
+                margin: 0 auto;
+                border-radius: 20px;
+                margin-top: 40px;
+            }
+            .content {
+                max-width: 1200px;
+                width: 100%;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            .image-content {
+                flex: 1;
+                position: relative;
+            }
+            .image-left, .image-right {
+                flex: 0 0 35%;
+            }
+            .image-content img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+            .image {
+                max-width: 100%;
+                transition: transform 0.3s ease;
+            }
+            .image:hover {
+                transform: scale(1.05);
+            }
+            .container {
+                background-color: peru;
+            }
+            .gallery-content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 60px;
+            }
+            .image-square {
+                width: 400px;
+                height: 400px;
+            }
+            .a {
+                transition: transform 0.3s ease;
+            }
+            .a:hover {
+                color:goldenrod;
+                text-decoration: underline;
+                transform: scale(1.05);
+            }
+            .text-color{
+                color: #2f1b0d;
+            }
+        </style>
+    </head>
+    <body style="background-color:#ffb347;">
+        <section class="two-columns container text-color">
+            <div class="text-content">
+                <h1 style="font-size: 40px; font-family: Consolas, 'Courier New', monospace;">Моя страничка</h1>
+                <p style="font-size: 24px; font-family: Arial, Helvetica, sans-serif;">Это моя первая страничка. Здесь немного информации обо мне, а также контакты для связи со мной.</p>
+            </div>
+            <div class="image-content image">
+                <img src="C:\Users\vk892\Desktop\лабы\введение в ИТ\img\photo_10_2025-09-11_23-38-50.jpg">
+            </div>
+        </section>
+        <section class="container center-box text-color">
+            <div class="section-title">
+                <h1 style="font-family: Consolas, 'Courier New', monospace;">Обо мне</h1>
+        </section>
+        <section class="container section text-color">
+            <div class="gallery-content">
+                <div class="image-content image-left image">
+                    <img src="C:\Users\vk892\Desktop\лабы\введение в ИТ\img\photo_33_2025-09-11_23-38-50.jpg">
+                </div>
+                <div class="center-text" style="font-family: Arial, Helvetica, sans-serif;">
+                    <p>ФИО: Тестова Анастасия Александровна</p>
+                    <p>Дата рождения: 04.09.2007</p>
+                    <p>Возраст: 18 лет</p>
+                    <p>Место рождения: город Абакан Республика Хакасия</p>
+                    <p>Семья: мама, папа, сестра</p>
+                    <p>Домашние питомцы: две собаки, кошка, пять котят, рыбки, курицы, кролики</p>
+                </div>
+                <div class="image-content image-right image">
+                     <img src="C:\Users\vk892\Desktop\лабы\введение в ИТ\img\photo_11_2025-09-11_23-38-50.jpg">
+                </div>
+            </div>
+        </section>
+        <section class="container center-box text-color">
+            <div class="section-title">
+                <h1 style="font-family: Consolas, 'Courier New', monospace;">Интересы</h1>
+        </section>
+        <section class="container section text-color">
+            <div class="gallery-content">
+                <div class="image-content image-left image">
+                    <img src="C:\Users\vk892\Desktop\лабы\введение в ИТ\img\photo_24_2025-09-11_23-38-50.jpg">
+                </div>
+                <div class="center-text">
+                    <div class="container" style="font-family: Arial, Helvetica, sans-serif;">
+                        <hr style="border-top: 3px solid sienna;" >
+                        <h3> Спорт</h3>
+                        <hr style="border-top: 3px solid sienna;" >
+                    </div>
+                    <p style="font-family: Arial, Helvetica, sans-serif;">Я 12 лет занималась русскими народными танцами. Участвовала в конкурсах, выступала в школах, на городских праздниках.</p>
+                    <div class="container" style="font-family: Arial, Helvetica, sans-serif;">
+                        <hr style="border-top: 3px solid sienna;" >
+                        <h3> Творчество</h3>
+                        <hr style="border-top: 3px solid sienna;" >
+                    </div>
+                    <p style="font-family: Arial, Helvetica, sans-serif;">Я очень люблю рисовать. В художественную школу я не ходила, училась сама, осваивала разные стили и разные материалы.</p>
+                    <p style="font-family: Arial, Helvetica, sans-serif;">Сама училась монтировать видео в таких прогрмаммах, как Мовавика, VSDC Free Video Editor. Монтировала видео для личного использования (на память, для поздравления и тд.)</p>
+                    <div class="container" style="font-family: Arial, Helvetica, sans-serif;">
+                        <hr style="border-top: 3px solid sienna;" >
+                        <h3> Учеба</h3>
+                        <hr style="border-top: 3px solid sienna;" >
+                    </div>
+                    <p style="font-family: Arial, Helvetica, sans-serif;">Помимо школы я занималась учебой. Участвовала в олимпиадах по информатике, математике и физике. Так же год занималась в школе программирования, где научилась основам программирования на Phyton, создала первую игру и нейросеть.</p>
+                </div>
+                <div class="image-content image-right image">
+                     <img src="C:\Users\vk892\Desktop\лабы\введение в ИТ\img\photo_23_2025-09-11_23-38-50.jpg">
+                </div>
+            </div>
+        </section>
+        <section class="container center-box text-color">
+            <div class="section-title">
+                <h1 style="font-family: Consolas, 'Courier New', monospace;">Контакты</h1>
+        </section>
+        <section class="container section text-color" style="font-family: Arial, Helvetica, sans-serif;">
+            <div class="gallery-content">
+                <div class="image-content image-square">
+                    <img src="C:\Users\vk892\Desktop\лабы\введение в ИТ\img\photo_2025-09-12_17-26-25.jpg" alt="WhatsApp">
+                    <figcaption style="font-size: 24px;">WhatsApp</figcaption>
+                </div>
+                <div class="image-content image-square">
+                    <img src="C:\Users\vk892\Desktop\лабы\введение в ИТ\img\photo_2025-09-12_17-26-18.jpg" alt="Telegram">
+                    <figcaption style="font-size: 24px;">Telegram</figcaption>
+                </div>
+            </div>
+            <div class="gallery-content" style="margin-top: 60px;">
+                <p><a class="a text-color" href="tel:+79832718460" style="font-size: 24px;">Телефон</a></p>
+                <p><a class="a text-color" href="mailto:testova-nastena@mail.ru" style="font-size: 24px;">E-mail</a></p>
+                <p><a class="a text-color" href="https://vk.com/id591407095" style="font-size: 24px;">Vk</a></p>
+            </div>
+        </section>
+    </body>
+</html>
